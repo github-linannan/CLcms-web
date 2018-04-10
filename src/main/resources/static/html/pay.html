@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>乐土基因健康产品</title>
+    <script type="text/javascript" src="common/js/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+
+    </style>
+    
+    <script type="text/javascript">  
+   var prepay_id ;  
+   var paySign ;  
+   var appId ;  
+   var timeStamp ;  
+   var nonceStr ;  
+   var packageStr ;  
+   var signType ;  
+   function pay(){  
+       var url = 'http://10.10.2.245:8082/pay/payBefault';  
+       $.ajax({  
+       type:"get",  
+       url:url,  
+       dataType:"json", 
+       async:false,
+      // data:{,openId:'${openId}'},  
+      data:{orderId:283},
+       success:function(data) {  
+    	   console.info(data);
+        if(data.code == 200){  
+            url = data.data.url;  
+             if(url!=null){
+            	 window.location.href=url;
+            	 return false;
+             }else{
+            	 alert("支付发起失败");
+            	 return false;
+             }
+           }else{  
+            alert("统一下单失败");  
+           }  
+       }  
+   });   
+   }  
+   pay();  
+  
+
+</script>  
+    
+</head>
+<body>
+
+
+<form action="http://10.10.2.245:8082/pay/payBefault?" method="get">
+<br/><br/><br/>
+<input type="hidden" name="orderId" value="174">
+   <input type="submit" value="确认支付">
+   </form>
+   <br/>
+   <br/>
+   <br/>
+   <br/>   
+   <a href="https://wx.tenpay.com/cgi-bin/mmpayweb-bin/checkmweb?prepay_id=wx20180313093429f8e25f2ba00340207245&package=2028281558"> 微信支付</a>
+</body>
+</html>

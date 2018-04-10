@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/lnn-style.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body >
+<div id="pg-my-orders" >
+    <div class="top-nav">
+        <span class="goBack icon-arrow-left" onclick="window.history.go(-1);"></span>
+        <span class="my-orders-title">我的订单</span>
+        <!--引入公共部分 ------------ 个人中心-->
+        <!-- You write code for this content block in another file -->
+        
+	<!--=============用户详情点击事件=============-->
+<div id="person-pos" class="navbar-btn-info">
+   <img src="./images/icons_person.png">
+</div>
+<!-- ====================start  用户详情展开部分================-->
+<div id="person-info-down" class="dis-none person-info-down" >
+
+   <div id="take-icon" class="nav-take-icon" ></div>
+   <div class="tools-login-no nav-top-login show">
+      <div class="user-info">
+         <img class="nav-head-pic" src="./images/product_03.jpg" />
+         <p class="nav-name-text">
+            <a class="touch-ripple" href="./login.html">登陆</a> 或
+            <a class="touch-ripple" href="./register.html">注册</a>
+         </p>
+      </div>
+   </div>
+   <div class="tools-login-yes nav-top-login">
+      <div class="user-info">
+         <img class="nav-head-pic" src="../images/product_03.jpg" />
+         <p class="nav-name-text">59599595489</p>
+      </div>
+   </div>
+   <a class="person-info-link" href="myOrders.html"><span class="person-info-icon icon-orders"></span>我的订单</a>
+   <a class="person-info-link" href="reportList.html"><span class="person-info-icon icon-report"></span>查看报告</a>
+   <a class="person-info-link" href=""><span class="person-info-icon icon-inspector"></span>我的检测人</a>
+   <a class="person-info-link" href="addressManage.html"><span class="person-info-icon icon-address"></span>收货地址</a>
+   <a class="person-info-link" href=""><span class="person-info-icon icon-collection"></span>我的收藏</a>
+   <div class="person-info-set">
+      <a class="nav-set" href="set.html">设置</a>
+      <a class="nav-aboutus" href="">关于</a>
+   </div>
+</div>
+<!-- ====================用户详情展开部分  end================-->
+
+
+    </div>
+    <div class="tabs">
+        <div class="tabs_menu clearfix">
+            <a href="javascript:;" class="selected">全部</a>
+            <a href="javascript:;">待付款</a>
+            <a href="javascript:;">待收货</a>
+            <a href="javascript:;">待回寄</a>
+            <a href="javascript:;">报告</a>
+        </div>
+
+        <div class="tabs_content_wrap">
+         <!--   <div class="tabs_content">
+                <div class="space-line"></div>
+                <div class="tabs-product-list">
+                    <a href="" class="tabs-product-img">
+                        <img src="http://10.10.2.224:8899/xmin/images/20171208/b7ad8c53d4254c78a5a9cdabed720e93.jpg">
+                    </a>
+                    <div class="tabs-product-info">
+                        <a href="" >ragon 625 5.5" FHD Android M 4G Phone P05-GHMNO4T</a>
+                        <p class="tabs-product-attributes">净含量：10斤</p>
+                        <div class="order-product-price">
+                            <span class="box-price"><em>$195.55</em><del>$429.99</del></span>
+                            <span class="box-number">X1</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="total-info">
+                    <div class="unit-num dis-inb"> 共<span class="num">8</span>件商品</div>
+                    <div class="unit-price dis-inb">合计：<span class="unit-total-price">￥29.9</span>(含运费：<span class="fare">0.00</span>)</div>
+                </div>
+                <div class="btn-deal">
+                    <button class="dis-inb delete">删除订单</button>
+                    <button  class="dis-inb payment">去付款</button>
+                </div>
+
+            </div>-->
+        </div>
+
+
+
+    </div>
+
+
+    <!--=========================模板=======================-->
+    <textarea id="tempArea" style="display: none">
+         <div class="space-line"></div>
+         <div class="tabs_content" goodsId=$goodsId$ orderStatus=$orderStatus$>
+
+                <div class="tabs-product-list">
+                    <a href="productDetails.html?categoryid=$goodsId$" class="tabs-product-img">
+                        <img src="#MinImgUrl#$goodsImageOne$">
+                    </a>
+                    <div class="tabs-product-info">
+                        <a href="" class="product-name">$goodsName$</a>
+                        <p class="tabs-product-attributes"></p>
+                        <div class="order-product-price">
+                            <span class="box-price"><em>$orderGoodsDiscountPrice$</em><del>$orderGoodsPrice$</del></span>
+                            <div class="box-number">X<span>$orderGoodsNum$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="total-info">
+                    <div class="unit-num dis-inb"> 共<span class="num">$orderGoodsNum$</span>件商品</div>
+                    <div class="unit-price dis-inb"><span class="text-total">合计: </span><span class="unit-total-price">$orderPayTotalPrice$</span>(含运费：<span class="fare">0.00</span>)</div>
+                </div>
+                <div class="btn-deal">
+                    <button id="delete" class="delete border-radius-style btn-style">删除订单</button>
+                    <button id="payment" class="payment border-radius-style btn-style">去付款</button>
+                </div>
+
+            </div>
+      </textarea>
+    <div id="bg-layer" class="shadow-bg" ></div>
+</div>
+
+
+<script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js"></script>
+<!-- Swiper JS -->
+<script type="text/javascript" src="./common/js/swiper.min.js"></script>
+<script type='text/javascript' src="js/controlShowShade.js"></script>
+<script src="./common/js/layer/layer.js"></script>
+<script type='text/javascript' src="./common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/zy-ajax.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/checkLogin.js"></script>
+<script src="./js/myOrders.js"></script>
+</body>
+</html>

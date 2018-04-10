@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商品展示</title>
+    <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/Lhl-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/dropload.css">
+    <script src="./common/js/jquery-3.2.1.min.js"></script>
+    <script src="./common/js/bootstrap.min.js"></script>
+    <script src="./common/js/swiper.min.js"></script>
+</head>
+<body style="background-color: #f2f2f2;">
+<div class="product-top">
+<div class="product-search">
+    <a href="javascript:window.location.href='index.html';" class="product-search-left">
+        <img src="./images/arrow_left.png"/>
+    </a>
+    <div class="product-search-center">
+        <img src="./images/search.png" class="product-search-img">
+        <input type="text" class="product-search-text" placeholder="请输入商品名称">
+    </div>
+    <span class="product-search-btn">搜索</span>
+</div>
+<div class="product-nav">
+    <div class="swiper-container" id="swiper_nav">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide active" data="" id="active">
+                <a href="#">全部</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<article class="product-list">
+<ul class="product-cont" id="product">
+</ul>
+</article>
+<div class="display-cart">
+    <img src="./images/shop_cart.png" id="cart-btn">
+</div>
+<textarea style="display: none">
+         <li>
+             <a href="productDetails.html?categoryid=$goodsId$">
+             <img src="./images/hl_product_detail_img.png" data-src="#MinImgUrl#$goodsImageOne$" alt="">
+             <p class="product-cont-title">$goodsShortname$</p>
+                 <p class="product-cont-price">￥$goodsDiscountPrice$</p>
+             </a>
+         </li>
+</textarea>
+</body>
+<script src="./common/js/layer/layer.js"></script>
+<script src="./common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/zy-ajax.js"></script>
+<script src="./js/dropload.js"></script>
+<script src="./common/js/img-lazy.js"></script>
+<script src="./js/productDisplay.js"></script>
+<script src="./js/navSwiper.js"></script>
+</html>

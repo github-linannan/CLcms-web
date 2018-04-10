@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>购物车</title>
+   <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+   <link rel="stylesheet" type="text/css" href="./common/base.css">
+   <link rel="stylesheet" type="text/css" href="./css/lnn-style.css">
+</head>
+<body >
+   <div id="pg-shop-cart" >
+      <div class="top-nav">
+         <span class="goBack icon-arrow-left" onclick="window.history.go(-1);"></span>
+         <span class="shop-cart-title">购物车</span>
+      </div>
+      <div class="top-shop-cart">
+
+         <div class="text-shop-cart">购物车(<span class="text-num">0</span>)</div>
+         <button id="delete-all">删除</button>
+      </div>
+         <div class="space-line"></div>
+         <div class="list-shop-cart">
+            <!--填充部分-->
+         </div>
+      <div class="container-all-select">
+         <div class="box-all-select dis-inb">
+            <!--所有商品全选-->
+            <input id="all" class="whole_check" type="checkbox">
+            <label for="all"></label><span class="all-text">全选</span>
+         </div>
+         <div class="box-sum-price dis-inb">
+            <!--<div class="total-num">共选中<span class="num">0</span>个商品</div>-->
+            <span class="total-money">合计:</span><strong class="sum-price">0.00</strong>
+         </div>
+         <button id="settlement" class="btn-continue settlement dis-inb">结算(<span class="num">0</span>)</button>
+      </div>
+
+
+      <div id="bg-layer" class="shadow-bg" ></div>
+      <!--模板部分-->
+      <textarea style="display: none">
+         <div id="goodsid$goodsId$"  productId="$goodsId$" class="container-package">
+            <div class="box-checkbox">
+               <input id="checkbox_$goodsId$" class="son_check" type="checkbox" productId="$goodsId$"/>
+               <label for="checkbox_$goodsId$"></label>
+               <!--  <input type="radio" class="icon" >-->
+            </div>
+            <a href="productDetails.html?categoryid=$goodsId$" class="touch-ripple">
+               <img src="#MinImgUrl#$goodsImageOne$"  >
+            </a>
+            <div class="box-product-info">
+               <div class="product-top-text">
+                  <a href="productDetails.html?categoryid=$goodsId$" class="touch-ripple product-short-title">$goodsName$</a>
+                  <button class="btn-delete" productId="$goodsId$"></button>
+               </div>
+               <p class="order-product-attributes"></p>
+               <div class="btns-deal-product-amount">
+                  <div class="order-product-price">
+                     <del>￥$goodsPrice$</del><em>￥$goodsDiscountPrice$</em>
+                  </div>
+                  <div class="amount-box">
+                     <a class="minus" href="javascript:void(0)">-</a>
+                     <input type="text" class="product-qty sum" size="4" maxlength="4" value=$count$>
+                     <a class="add" href="javascript:void(0)">+</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </textarea>
+   </div>
+
+
+   <script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js"></script>
+   <script src="./common/js/layer/layer.js"></script>
+   <script type='text/javascript' src="./common/js/cache.js"></script>
+   <script src="./js/config.js"></script>
+   <script src="./js/shoppingCart.js"></script>
+   <script src="./js/zy-ajax.js"></script>
+</body>
+</html>

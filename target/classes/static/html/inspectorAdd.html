@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>添加检测人</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="common/css/lCalendar.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body class="bg-color-gr">
+<header class="zy-header address-manage">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>添加检测人</label>
+</header>
+<section class="inspector-add" id="adsList">
+        <ul>
+            <li >
+                <label>姓名</label>
+                <input type="text" placeholder="请填写真实姓名">
+            </li>
+            <li>
+                <label>性别</label>
+                <div>
+                    <img src="images/boy.png" alt="">男
+                    <img src="images/girl.png" alt="">女
+                </div>
+            </li>
+            <li >
+                <label>生日</label>
+                <input type="text" placeholder="请选择">
+               <img src="images/right_black.png" alt="">
+                <div >
+                    <el-date-picker  placeholder="选择日期"
+                                    :editable="false" style="width:100%"
+                                    @change="(value) => changeHandler(value, item.name)">
+                    </el-date-picker>
+                </div>
+            </li>
+            <li >
+                <label class="font-space">身高(cm)</label>
+                <input type="text" placeholder="请填写">
+            </li>
+            <li >
+                <label class="font-space">体重(kg)</label>
+                <input type="text" placeholder="请填写">
+            </li>
+            <li >
+                <label class="font-space">检测人手机号</label>
+                <input type="text" placeholder="请填写">
+            </li>
+            <li >
+                <label>籍贯</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li >
+                <label class="font-space">教育程度</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li >
+                <label>关系</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li >
+                <label>地址</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li>
+                <textarea rows="3" placeholder="详细地址"></textarea>
+            </li>
+        </ul>
+
+</section>
+<a class="login-btn mg-t-1 bd-radiu-none" href="">确认</a>
+<!--<aside class="zy-address-null">-->
+    <!--<img src="images/address.png" alt="">-->
+    <!--<label>您还没有检测人信息！</label>-->
+    <!--<a href="javascript:;" class="addBtn">录入检测人</a>-->
+<!--</aside>-->
+<!--<footer class="zy-footer">-->
+    <!--<a href="javascript:;" class="addBtn">新增检测人</a>-->
+<!--</footer>-->
+
+<!--<script src="common/js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="common/js/layer/layer.js"></script>-->
+<!--<script src="js/zy-ajax.js"></script>-->
+<!--<script src="js/tabControl.js"></script>-->
+<script src="common/js/cache.js"></script>
+<script src="common/js/lCalendar.min.js"></script>
+<script src="common/js/vue.js"></script>
+<script src="common/js/vue-resource.js"></script>
+<script src="js/inspectorAdd.js"></script>
+<!--<script src="js/addAddress.js"></script>-->
+</body>
+</html>

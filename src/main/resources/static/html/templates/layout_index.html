@@ -1,0 +1,133 @@
+<!--layout_index.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>首页</title>
+   <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+   <link rel="stylesheet" type="text/css" href="./common/base.css">
+   <link rel="stylesheet" type="text/css" href="./css/lnn-style.css">
+</head>
+<body >
+   <div id="pg-index" >
+      <div class="header-nav">
+         <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+               <!--==========================首页左上角导航点击事件================-->
+               <div class="navbar-header">
+                  <button id="web-set" type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target="#navbar-collapse">
+                     <span class="btn-menu"></span>
+                    <!-- <span class="sr-only">切换导航</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>-->
+                  </button>
+
+               </div>
+               <!--==========================首页左上角导航展开部分================-->
+               <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="web-down-ul">
+                     <li class="web-down-li">
+                        <a href="/" class="web-down-li-a index-base-color">首页</a></li>
+
+                     <li class="web-down-li"> <a href="" class="web-down-li-a web-down-li-a2">商城</a></li>
+
+                     <li class="web-down-li"> <a href="" style="background-color:#00ddc6" class="web-down-li-a web-down-li-a2">資訊</a></li>
+                     <li class="web-down-li"> <a href="" style="background-color:#4aa612" class="web-down-li-a web-down-li-a2">报告</a></li>
+                  </ul>
+               </div>
+               <!--引入公共部分 ------------ 个人中心-->
+               <!-- You write code for this content block in another file -->
+               {% block content %} {% endblock %}
+
+            </div>
+         </nav>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+            <!--<div class="swiper-slide"><a href=""><img src="images/banner_index_nihao.jpg"></a> </div>
+            <div class="swiper-slide"><a href=""><img src="images/banner_index_nihao.jpg"></a> </div>-->
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+      </div>
+      <div class="index-menu-list row">
+         <div class="col-xs-3"><a href="./reportList.html"><span class="icon-top-list icon-view-report"><img src="./images/icon_view_report.png"> </span><p>查报告</p></a> </div>
+         <div class="col-xs-3"><a href="videoDisplay.html"><span class="icon-top-list icon-training-studio"><img src="./images/icon_training_studio.png"></span><p>培训工作室</p></a></div>
+         <div class="col-xs-3"><a href=""><span class="icon-top-list icon-gene-special"><img src="./images/icon_gene_special.png"></span><p>基因专场</p></a></div>
+         <div class="col-xs-3"><a href=""><span class="icon-top-list icon-cooperative-hospital"><img src="./images/icon_cooperative_hospital.png"></span><p>合作医院</p></a></div>
+      </div>
+      <div class="space-line"></div>
+      <!--health package-->
+      <div class="index-health-package">
+         <div class="page-header"> <a href="productDisplay.html?type=健康套餐" ><span class="icon icon-package"></span><h1>健康套餐 </h1> <img class="icon-next" src="./images/icons_next.png" /></a></div>
+         <ul class="list-unstyled">
+           <!-- <li><a href=""><img src="./images/banner_index_nihao.jpg"> </a> </li>
+            <li><a href=""><img src="./images/banner_index_nihao.jpg"> </a> </li>-->
+         </ul>
+      </div>
+      <div class="space-line"></div>
+      <div class="index-health-shop">
+         <div class="page-header"> <a href="productDisplay.html" ><span class="icon icon-shop"></span><h1>健康商城</h1><img class="icon-next" src="./images/icons_next.png" /></a></div>
+         <div class="row">
+            <!--==========================填充模板部分==========================-->
+         </div>
+
+      </div>
+      <div class="space-line"></div>
+      <div class="index-health-info">
+         <div class="page-header"> <a href="infoDisplay.html" ><span class="icon icon-info"></span><h1>健康资讯 </h1> <img class="icon-next" src="./images/icons_next.png" /></a></div>
+         <ul class="list-unstyled">
+        <!--    <li>
+               <a href=""><img src="./images/product_03.jpg" alt="">
+                  <div class="news-list">
+                     <div class="shorttitle">【“DNA之父”沃森中国行】沃森博士为南...</div>
+                     <div class="indexnews-con">2017深圳国际精准医疗峰会在深圳五洲宾馆开幕。</div>
+                     <div class="account-of-read">阅读量：<span>25555555555555</span></div>
+                  </div></a>
+            </li>
+            <li>
+               <a href=""><img src="./images/product_03.jpg" alt="">
+                  <div class="news-list">
+                     <div class="shorttitle">【“DNA之父”沃森中国行】沃森博士为南...</div>
+                     <div class="indexnews-con">2017深圳国际精准医疗峰会在深圳五洲宾馆开幕。会上，市领导田夫向沃森颁发“第三届深圳市科技专</div>
+                     <div class="account-of-read">阅读量：<span>2550</span></div>
+                  </div></a>
+            </li>-->
+         </ul>
+      </div>
+      <div class="space-line"></div>
+
+      <div id="bg-layer" class="shadow-bg" ></div>
+      <!--=========================模板=======================-->
+      <textarea id="tempArea" style="display: none">
+         <div class="col-xs-4 com-product">
+            <a href="productDetails.html?categoryid=$goodsId$"><img src="#MinImgUrl#$goodsImageOne$"> </a>
+            <div class="disc">
+               <a class="title" href=""><h2>$goodsShortname$</h2></a>
+               <p class="price"><strong>￥$goodsDiscountPrice$</strong><del>￥$goodsPrice$</del></p>
+            </div>
+         </div>
+      </textarea>
+   </div>
+
+
+   <script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js">
+    <script src="./common/js/layer/layer.js"></script>
+   <script type='text/javascript' src="js/controlShowShade.js"></script>
+   <!-- Swiper JS -->
+   <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+   <script src="./common/js/layer/layer.js"></script>
+   <script type='text/javascript' src="./common/js/cache.js"></script>
+   <script src="./js/config.js"></script>
+   <script src="./js/zy-ajax.js"></script>
+   <script src="./js/index.js"></script>
+   <script src="./js/checkLogin.js"></script>
+
+</body>
+</html>

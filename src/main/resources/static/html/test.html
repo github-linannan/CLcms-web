@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <br/>
+   <input id="bt" type="button" value="获取OPENID">
+
+</body>
+<script>
+  $(function(){
+	 // var serverurl="http://t19u606816.imwork.net";
+	  var serverurl="http://10.10.3.83:8082";
+	
+
+
+	     $("#bt").click(function(){
+
+	    	 $.ajax({
+	 			"url": serverurl + "/wxAuthorize",
+	 			method: "get",
+	 			data:{"token":"f6b0945467a1418a9618dae75ff4c394"},
+	 			contentType: "application/json;charset=UTF-8",
+	 			success: function(data){
+	 		   window.location.href=data;
+	 			},error: function(XMLHttpRequest,textStatus,errorThrown){
+	 				alert(textStatus);
+	 			}
+	 		});
+
+	     });
+
+  });
+</script>
+</html>

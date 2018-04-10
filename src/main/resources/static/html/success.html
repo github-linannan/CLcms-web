@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>支付成功</title>
+  <link rel="stylesheet" type="text/css" href="/common/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/common/base.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/lnn-style.css"/>
+</head>
+<body>
+ <div id="payment-result">
+   <div class="top-nav">
+     <span class="goBack icon-arrow-left" onclick="window.history.go(-1);"></span>
+     <span class="shop-cart-title">支付成功</span>
+   </div>
+   <div class="pay-success pay-common">
+     <div class="icon-right icon-show">
+       <span class="icon"></span>
+       <p>支付成功</p>
+     </div>
+     <div class="pay-content">
+       <ul>
+         <li><span class="left-name">支付方式</span><span class="right-name" th:text="${payType}">微信支付</span></li>
+         <li><span class="left-name">交易订单</span><span class="right-name" th:text="${outTradeNo}">55555555555</span></li>
+         <li><span class="left-name">交易时间</span><span class="right-name"  th:text="${payTime}">2016-7-18 14:00</span></li>
+         <li><span class="left-name">支付金额</span><span class="right-name"  th:text="${totalAmount}">15元</span></li>
+       </ul>
+     </div>
+     <div class="btn-return">
+       <a href="/">返回首页</a>
+     </div>
+
+   </div>
+
+ </div>
+</body>
+</html>

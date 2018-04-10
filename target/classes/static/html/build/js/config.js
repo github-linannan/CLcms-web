@@ -1,0 +1,1 @@
+var img_url="http://10.10.7.11:8899",MinImgUrl="http://10.10.7.11:8899/xmin",checkLogin=MyLocalStorage.Cache.get("token");console.log(checkLogin);

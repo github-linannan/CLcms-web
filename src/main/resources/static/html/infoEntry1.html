@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信息录入</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="common/css/lCalendar.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body class="bg-color-gr">
+<header class="zy-header address-manage">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>信息录入</label>
+</header>
+<div id="entryPage1" class="">
+    <section class="info-entry" id="entry1List">
+        <ul>
+
+            <li >
+                <label>检测人</label>
+                <a href="inspectorManage.html">
+                    <input type="text" name="userId" placeholder="请选择">
+                    <img src="images/right_black.png" alt=""></a>
+            </li>
+            <li class="select-zi">
+                <label>样本类型</label>
+                <select name="tSampleType" >
+                    <option value="">请选择</option>
+                </select>
+            </li>
+            <li >
+                <label class="font-space">样本编号</label>
+                <input type="text" name="tSampleNumber" placeholder="请输入样本编号">
+            </li>
+            <li>
+                <label>采样时间</label>
+                <input id="birthData" type="text" readonly="" name="orderSampleCreateTime" placeholder="请选择"
+                       data-lcalendar="2018-01-1,2100-12-31">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li>
+                <label>快递单号</label>
+                <input type="text" name="orderReturnShipNumber" placeholder="请输入单号">
+            </li>
+        </ul>
+
+    </section>
+    <a class="login-btn mg-t-1 bd-radiu-none zy-footer" id="entry1-btn" href="javascript:;">下一步</a>
+</div>
+
+<div id="entryPage2" class="dis-none">
+    <section class="info-entry" id="entry2List">
+        <ul>
+            <li class="select-zi">
+                <label>饮酒史</label>
+                <select name="userinfoDrink" >
+                    <option value="">请选择</option>
+                </select>
+            </li>
+            <li class="select-zi">
+                <label>运动习惯</label>
+                <select name="userinfoExperience" >
+                    <option value="">请选择</option>
+                </select>
+            </li>
+            <li class="select-zi">
+                <label>饮食习惯</label>
+                <select name="userinfoEat" >
+                    <option value="">请选择</option>
+                </select>
+            </li>
+            <li class="select-zi">
+                <label>睡眠质量</label>
+                <select name="userinfoSleep" >
+                    <option value="">请选择</option>
+                </select>
+            </li>
+            <li class="info-drink">
+                <label>个人既往病史</label>
+                <div >
+                    <input type="radio" class="yes" name="medical">有
+                    <input type="radio" class="no" name="medical">无
+                </div>
+                <textarea rows="3" class="yesBox dis-none"  name="userinfoMedicalhistory" placeholder="请填写个人病史"></textarea>
+            </li>
+            <li class="info-drink">
+                <label>疾病家族史</label>
+                <div >
+                    <input type="radio" class="yes" name="family">有
+                    <input type="radio" class="no" name="family">无
+                </div>
+                <textarea rows="3" class="yesBox dis-none" name="userinfoFamilyhistory" placeholder="请填写家族病史"></textarea>
+            </li>
+        </ul>
+
+    </section>
+    <a class="login-btn mg-t-1 bd-radiu-none zy-footer" id="entry2-btn" href="javascript:;">下一步</a>
+</div>
+
+<div id="entryDetail" class="dis-none">
+    <aside class="entry-detail">
+        <div>
+           
+            <label>个人信息</label>
+            <img src="images/right_black.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <h2 name="userName"></h2>
+            </li>
+            <li>
+                <label name="userSex"></label>|
+                <label>26</label>岁
+                <label>(<span name="userBirthday"></span>)</label>
+            </li>
+            <li>
+                电话:<label name="userTelephone"></label>
+            </li>
+            <li>
+                籍贯:<label name="userNative"></label>
+            </li>
+            <li>
+                身高:<label name="userHeight"></label>cm
+            </li>
+            <li>
+                体重:<label name="userWeight"></label>kg
+            </li>
+            <li>
+                地址:<label name="userAddress"><label name="userAddressInfo"></label></label>
+            </li>
+        </ul>
+        <ul class="zy-simple-detail">
+            <li>
+                <label>样本编号</label>
+                <span name="orderNumber"></span>
+            </li>
+            <li>
+                <label>采样时间</label>
+                <span name="orderSampleCreateTime"></span>
+            </li>
+            <li>
+                <label>样本类型</label>
+                <span name="tSampleType"></span>
+            </li>
+            <li>
+                <label>快递单号</label>
+                <span name="orderReturnShipNumber"></span>
+            </li>
+        </ul>
+    </aside>
+    <aside class="entry-detail">
+        <div>
+            <img src="" alt="">
+            <label>基本信息</label>
+            <img src="images/right_black.png" alt="">
+        </div>
+        <ul class="zy-simple-detail">
+            <li>
+                <label>饮酒史</label>
+                <span name="userinfoDrink"></span>
+            </li>
+            <li>
+                <label>运动习惯</label>
+                <span name="userinfoExperience"></span>
+            </li>
+            <li>
+                <label>饮食习惯</label>
+                <span name="userinfoEat"></span>
+            </li>
+            <li>
+                <label>睡眠质量</label>
+                <span name="userinfoSleep"></span>
+            </li>
+            <li>个人既往病史
+                <p name="userinfoMedicalhistory"></p>
+            </li>
+            <li>疾病家族史
+                <p name="userinfoFamilyhistory"> </p>
+            </li>
+        </ul>
+    </aside>
+</div>
+
+
+
+<script src="common/js/jquery-3.2.1.min.js"></script>
+<script src="common/js/layer/layer.js"></script>
+<script src="js/zy-ajax.js"></script>
+<script src="common/js/cache.js"></script>
+<script src="common/js/lCalendar.min.js"></script>
+<script src="js/infoEntry1.js"></script>
+
+</body>
+</html>

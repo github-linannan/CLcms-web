@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: platform-web
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: linannan
+Implementation-Vendor-Id: com.letu.healplatform
+Build-Jdk: 1.8.0_162
+Implementation-URL: http://projects.spring.io/spring-boot/platform-web
+ /
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>进度查询</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+    <link rel="stylesheet" href="css/Lhl-style.css">
+</head>
+<body>
+<header class="zy-header">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>进度查询</label>
+</header>
+<div class="zy-progress">
+    <textarea style="display: none">
+    <ul >
+        <li class="item-on">
+            <div>
+                <img src="images/progress_time.png" alt="">
+                <label class="time-on">当前状态</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_1.png" alt="">
+                        <label class="label-on">样本已接收</label>
+                        <i><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article-on">
+                        <div class="progress-mid">
+                        <span>温馨提示</span>
+                        <p>信息已录入，正在审核您的信息，如有问题，我们会第一时间联系您，谢谢！</p>
+                        </div>
+                    </article>
+                </section>
+
+            </aside>
+        </li>
+        <li class="item6">
+            <div>
+                <img src="images/progress_time.png" alt="">
+                <label>$orderCheckShipTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_6.png" alt="">
+                        <label class="label6">报告审核</label>
+                        <i><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article6">
+                        <div class="progress-mid">
+                        <span>温馨提示</span>
+                        <p>报告已审核</p>
+                        </div>
+                    </article>
+                </section>
+            </aside>
+        </li>
+        <li class="item5">
+            <div>
+                <img src="images/progress_time.png" alt="">
+                <label>$orderDetectionShipTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_2.png" alt="">
+                        <label class="label5">样本检测</label>
+                        <i><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article5">
+                        <div class="progress-mid">
+                        <span>温馨提示</span>
+                        <p>样本检测已完成</p>
+                        </div>
+                    </article>
+                </section>
+            </aside>
+        </li>
+        <li class="item4">
+            <div >
+                <img src="images/progress_time.png" alt="">
+                <label>$orderAccpectShipTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_6.png" alt="">
+                        <label class="label4">样本已接收</label>
+                        <i><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article4">
+                        <div class="progress-mid">
+                        <span>温馨提示</span>
+                        <p>样本已接收</p>
+                        </div>
+                    </article>
+                </section>
+
+            </aside>
+        </li>
+        <li class="item3">
+            <div class="progress-tit">
+                <img src="images/progress_time.png" alt="">
+                <label>$orderReturnShipTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_4.png" alt="">
+                        <label class="label3">样本已回寄</label>
+                        <i><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article3">
+                        <div class="progress-mid">
+                        <div class="progress-return">
+                        <p>样本编号：$sampleNumber$</p>
+                        <p>物流单号：$orderReturnShipNumber$</p>
+                        </div>
+                        </div>
+                        <div class="progress-express">
+                            <a class="progress-btn" href="expressLook.html?id=$orderShipNumber$">
+                                查看物流
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </aside>
+        </li>
+        <li class="item2">
+            <div >
+                <img src="images/progress_time.png" alt="">
+                <label>$orderShipTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div class="progress-list">
+                        <img src="images/progress_5.png" alt="">
+                        <label class="label2"></label>
+                        <i class="down2"><img src="images/down.png" alt=""></i>
+                    </div>
+                    <article class="dis-none article2">
+                        <div class="progress-mid">
+                        <span>温馨提示</span>
+                        <p></p>
+                        </div>
+                        <div class="progress-express">
+                            <a class="progress-btn" href="expressLook.html?id=$orderShipNumber$">
+                                查看物流
+                            </a>
+                        </div>
+                    </article>
+                </section>
+
+            </aside>
+        </li>
+        <li class="item1">
+            <div>
+                <img src="images/progress_time.png" alt="">
+                <label class="label1">$orderPayTime$</label>
+            </div>
+            <aside>
+                <section class="progress-tit">
+                    <div>
+                        <img src="images/progress_buy.png" alt="">
+                        <label>购买产品</label>
+                    </div>
+                </section>
+
+            </aside>
+        </li>
+    </ul>
+    </textarea>
+</div>
+
+<script src="common/js/jquery-3.2.1.min.js"></script>
+<script src="common/js/layer/layer.js"></script>
+<script src="common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="js/zy-ajax.js"></script>
+<script src="js/progressQuery.js"></script>
+</body>
+</html>

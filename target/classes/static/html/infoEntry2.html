@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信息录入</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="common/css/lCalendar.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body class="bg-color-gr">
+<header class="zy-header address-manage">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>信息录入</label>
+</header>
+<section class="info-entry" id="adsList">
+        <ul>
+            <li class="info-drink">
+                <label>饮酒史</label>
+                <div >
+                    <input type="checkbox">有
+                    <input type="checkbox">无
+                </div>
+            </li>
+            <li>
+                <label>运动习惯</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li >
+                <label>饮食习惯</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li >
+                <label class="font-space">睡眠质量</label>
+                <input type="text" placeholder="请选择">
+                <img src="images/right_black.png" alt="">
+            </li>
+            <li class="info-drink">
+                <label>个人既往病史</label>
+                <div >
+                    <input type="checkbox">有
+                    <input type="checkbox">无
+                </div>
+                <textarea rows="3" placeholder="请填写个人病史"></textarea>
+            </li>
+            <li class="info-drink">
+                <label>疾病家族史</label>
+                <div >
+                    <input type="checkbox">有
+                    <input type="checkbox">无
+                </div>
+                <textarea rows="3" placeholder="请填写家族病史"></textarea>
+            </li>
+        </ul>
+
+</section>
+<a class="login-btn mg-t-1 bd-radiu-none zy-footer" href="">下一步</a>
+
+<script src="common/js/cache.js"></script>
+<script src="common/js/lCalendar.min.js"></script>
+<script src="common/js/vue.js"></script>
+<script src="common/js/vue-resource.js"></script>
+<script src="js/inspectorAdd.js"></script>
+<!--<script src="js/addAddress.js"></script>-->
+</body>
+</html>

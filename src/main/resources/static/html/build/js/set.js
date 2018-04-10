@@ -1,0 +1,1 @@
+$("#quitBtn").on("click",function(){$.ajaxByPost("login/quitLogin",{token:MyLocalStorage.Cache.get("token")},function(o){200==o.code?(window.location.href="index.html",localStorage.token=""):layer.msg(o.detailMessage)})});

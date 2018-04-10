@@ -1,0 +1,1 @@
+$(function(){""!=checkLogin&&null!=checkLogin&&($("#person-info-down .tools-login-no").removeClass("show"),$("#person-info-down .tools-login-yes").addClass("show"))});

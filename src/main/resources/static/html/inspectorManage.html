@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的检测人</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body class="bg-color-gr">
+<header class="zy-header address-manage">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>我的检测人</label>
+</header>
+<section class="inspector-list" id="adsList">
+    <a href="javascript:;" class="add-inspector-btn">
+        <img src="images/add-inspector.png" alt="">
+        <span>新增检测人</span>
+    </a>
+    <aside class="person-list">
+        <ul id="tempInspectorList">
+        </ul>
+    </aside>
+</section>
+
+<!--=========================检测人列表-模板=======================-->
+<textarea id="" style="display: none">
+     <li >
+         <label>$userName$</label>
+         <span>$typeName$</span>
+         <a href="javascript:;" class="deleteInspe">删除</a>
+         <a href="javascript:;" class="compileInsp" userId="$userId$">编辑</a>
+      </li>
+</textarea>
+
+
+<script src="common/js/jquery-3.2.1.min.js"></script>
+<script src="common/js/layer/layer.js"></script>
+<script src="js/zy-ajax.js"></script>
+<script src="common/js/cache.js"></script>
+<script src="js/inspectorManage.js"></script>
+</body>
+</html>

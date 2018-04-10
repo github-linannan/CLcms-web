@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body>
+<header class="zy-header">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>用户注册</label>
+</header>
+<form class="zy-login" id="registerForm">
+    <div>
+        <label for=""><img src="images/login_phone.png" alt=""></label>
+        <input type="text" id="phone" placeholder="请输入手机号" >
+    </div>
+    <div>
+        <label for=""><img src="images/register_msg.png" alt=""></label>
+        <input type="text" placeholder="请输入验证码" class="w-5" id="verity" >
+        <a href="javascript:;" class="cl-base verify-code">发送验证码</a>
+    </div>
+    <div>
+        <label for=""><img src="images/register_apply.png" alt=""></label>
+        <input type="text" id="invite" placeholder="请输入邀请码（选填）" >
+    </div>
+    <div>
+        <label for=""><img src="images/login_pwd.png" alt=""></label>
+        <input type="password" id="newPwd" placeholder="请输入8-16位字母和数字" >
+
+    </div>
+    <div>
+        <label for=""><img src="images/login_pwd.png" alt=""></label>
+        <input type="password" placeholder="请确认密码" id="confirmPwd">
+        <!--<a href="javascript:;" class="glyphicon glyphicon-eye-open cl-gray ft-sz-5"></a>-->
+    </div>
+    <a href="javascript:;" class="login-btn mg-t-3" id="register">注册</a>
+    <p class="txt-c cl-gray mg-t-3">已有账号,去 <a href="login.html" class="cl-base">登录</a></p>
+</form>
+
+
+<script src="common/js/jquery-3.2.1.min.js"></script>
+<script src="common/js/layer/layer.js"></script>
+<script src="js/zy-ajax.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/lnn-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/Lhl-style.css">
+</head>
+<!--<style>
+    html,body,iframe{margin:0px;padding:0px;border:0px;width:100%;height:100%;}
+</style>-->
+<body>
+<div id="orderdetails">
+    <div class="top-nav">
+        <span class="goBack icon-arrow-left" onclick="window.history.go(-1);"></span>
+        <span class="my-orders-title">订单详情</span>
+    </div>
+    <div class="submit-order-address have-address" style="display: block;">
+        <img src="./images/cart_address.png" class="cart-address">
+        <div class="submit-order-shouhuo-info">
+            <p class="flo-l font-size32">收货人：<span name="addressName"></span></p>
+            <p class="flo-r font-size32" name="addressTelephone"></p>
+            <div style="clear: both"></div>
+            <p class="address-info">收货地址：<span name="addressComplete"></span>
+            </p>
+        </div>
+    </div>
+    <img src="./images/order_line.png" class="submit-order-line have-address">
+    <div class="submit-order-line2"></div>
+    <div style="clear: both"></div>
+    <ul class="submit-order-shop">
+        <!--<textarea style="display: none" id="product-textarea">-->
+        <li class="submit-order-seller-name">
+            南科大乐土精准医疗
+        </li>
+
+       <!-- 商品列表模板插入位置-->
+        <li class="submit-order-shop-express">
+            <p class="flo-l">快递方式</p>
+            <span class="flo-r express-color">免邮</span>
+        </li>
+
+        <li class="submit-order-shop-express mg-lt-0">
+            <p class="flo-r"><span class="order-total-num">共<span class="num-span66" id="num-span66">1</span>件商品</span><span>小计:</span><span class="order-total-price">￥<span id="total-price66">0.01</span></span></p>
+        </li>
+        <!--</textarea>-->
+    </ul>
+    <div class="space-line"></div>
+    <div class="order-info">
+        <div class="order-number">订单编号：<p></p></div>
+        <div class="order-create-time">创建时间：<p></p></div>
+    </div>
+    <div class="space"></div>
+
+    <div class="btn-deal">
+        <!--按钮插入位置-->
+    </div>
+
+
+
+</div>
+<input type="hidden" value="2" id="select_value">
+<form id="payment" action="" style="visibility: hidden">
+    <input type="text" value="" name="orderId" class="payvalue">
+    <!--<input type="submit" >-->
+</form>
+
+<div class="submit-order-bottom" style="display: none">
+    <div class="submit-order-btn float-right">提交订单</div>
+    <div class="submit-order-num"><span class="order-bottom-num">共 <span class="color-money" id="all-num">2</span> 件</span>合计：<span class="color-money">￥<span id="all-price">3999.00</span></span></div>
+</div>
+
+
+<!--===========商品列表模板============-->
+<div class="temp-order-info-list" style="display: none">
+    <li class="submit-order-shop-info">
+        <a href="productDetails.html?categoryid=$goodsId$">
+            <div class="shop-info-img">
+                <img src="#MinImgUrl#$goodsImageOne$">
+            </div>
+            <div class="shop-info-jieshao">
+                <p class="shop-info-jieshao-name">$goodsName$</p>
+                <p class="shop-info-jieshao-guige">规格：1盒</p>
+                <div class="shop-info-jieshao-bottom">
+                    <p class="shop-info-jieshao-price float-left">￥<span id="price$goodsId$">$orderGoodsDiscountPrice$</span><span class="shop-info-jieshao-oprice">￥$orderGoodsPrice$</span></p>
+                    <p class="shop-info-jieshao-num float-right">x <span class="num-span$goodsId$">$orderGoodsNum$</span></p>
+                </div>
+            </div>
+        </a>
+    </li>
+</div>
+<!--===========end商品列表模板============-->
+</body>
+<script type="text/javascript" src="theme/js/third/jquery-3.2.1.min.js"></script>
+<script src="./common/js/layer/layer.js"></script>
+<script type='text/javascript' src="./common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/zy-ajax.js"></script>
+<!--<script src="./js/index.js"></script>-->
+<script src="./js/checkLogin.js"></script>
+<script src="./js/ordersInfo.js"></script>
+<script src="./js/payment.js"></script>
+</html>

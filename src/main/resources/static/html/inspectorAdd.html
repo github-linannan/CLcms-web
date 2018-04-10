@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>添加检测人</title>
+    <link rel="stylesheet" href="common/base.css">
+    <link rel="stylesheet" href="common/css/lCalendar.css">
+    <link rel="stylesheet" href="css/zy-style.css">
+</head>
+<body class="bg-color-gr">
+<header class="zy-header address-manage">
+    <a href="javascript:history.go(-1)"><img src="images/left.png" alt=""></a>
+    <label>添加检测人</label>
+</header>
+<section class="inspector-add" id="adsList">
+    <ul>
+        <li>
+            <label>姓名</label>
+            <input class="dis-none" names="userId" type="text">
+            <input names="userName" type="text" placeholder="请填写真实姓名">
+        </li>
+        <li class="gender-sel">
+            <label>性别</label>
+            <div names="userSex">
+                <a href="javascript:;" class="boy">
+                    <img src="images/boy-sel.png" alt="">
+                    <span>男</span></a>
+                <a href="javascript:;" class="girl">
+                    <img src="images/girl.png" alt="">
+                    <span>女</span></a>
+            </div>
+        </li>
+        <li>
+            <label>生日</label>
+            <input names="userBirthday" id="birthData" type="text" readonly="" name="input_date" placeholder="请选择"
+                   data-lcalendar="1900-01-1,2019-12-31">
+            <img src="images/right_black.png" alt="">
+
+        </li>
+        <li>
+            <label class="font-space">身高(cm)</label>
+            <input names="userHeight" type="text" placeholder="请填写">
+        </li>
+        <li>
+            <label class="font-space">体重(kg)</label>
+            <input names="userWeight" type="text" placeholder="请填写">
+        </li>
+        <li>
+            <label class="font-space">检测人手机号</label>
+            <input names="userTelephone" type="text" placeholder="请填写">
+        </li>
+        <li class="select-zi">
+            <label>籍贯</label>
+            <!--<img src="images/right_black.png" alt="">-->
+            <select class="userJig" names="userNative" name="">
+                <option value="" >请选择</option>
+            </select>
+
+        </li>
+        <li class="select-zi">
+            <label class="font-space">教育程度</label>
+            <select class="userEduc" names="userEducation" >
+                <option value="">请选择</option>
+            </select>
+        </li>
+        <li class="select-zi">
+            <label>关系</label>
+            <select class="userShip" names="userRelationship" >
+                <option value="">请选择</option>
+            </select>
+        </li>
+        <li>
+            <label>地址</label>
+            <input type="text" names="userAddress" id="sel_city" placeholder="请选择">
+            <img src="images/right_black.png" alt="">
+        </li>
+        <li>
+            <textarea names="userAddressInfo" rows="3" placeholder="详细地址"></textarea>
+        </li>
+    </ul>
+
+</section>
+<a class="login-btn mg-t-1 bd-radiu-none" id="addInspector" href="javascript:;">确认</a>
+
+<script src="common/js/jquery-3.2.1.min.js"></script>
+<script src="common/js/layer/layer.js"></script>
+<script src="js/zy-ajax.js"></script>
+<script src="common/js/cache.js"></script>
+<script src="common/js/lCalendar.min.js"></script>
+<script src="js/inspectorAdd.js"></script>
+
+</body>
+</html>

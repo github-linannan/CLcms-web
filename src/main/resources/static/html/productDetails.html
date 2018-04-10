@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/Lhl-style.css">
+    <link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
+    <script src="./common/js/jquery-3.2.1.min.js"></script>
+    <script src="./common/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="product-detail-nav">
+    <img src="images/arrow_left_black.png" class="goBack">
+    <ul id="product-detail-list">
+        <li><a href="javascript:void(0)" class="introduce">商品介绍</a></li>
+        <li><a href="javascript:void(0)" class="detail">商品详情</a></li>
+    </ul>
+</div>
+<!--<img src="images/hl_product_detail_banner.jpg" class="product-detail-banner" >-->
+<a class="left_circlebg goBack">
+    <img src="./images/left_circlebg.png" >
+</a>
+<div class="swiper-container product-detail-banner" id="introduce">
+    <div class="swiper-wrapper">
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="product-detail-cont"></div>
+<div class="product-detail-title hl-detail" id="detail">
+    <div></div>
+    <p><img src="./images/hl_product_detail_img.png"> <span>商品详情</span></p>
+    <div></div>
+</div>
+<div class="product-detail-detail"></div>
+<div class="product-detail-bottom">
+    <div class="product-detail-cart">
+    加入购物车
+    </div>
+    <div class="product-detail-buy">
+        立即购买
+    </div>
+</div>
+<div class="product-detail-mask">
+</div>
+<div class="product-detail-select">
+     <div class="product-detail-select-img">
+         <img src="" alt="产品" id="select-img">
+     </div>
+    <img src="./images/cart_close.png" class="cart-close" alt="关闭按钮">
+    <div class="product-detail-select-top">
+         <p class="select-price">￥<span id="select-price">1,988.00</span></p>
+        <p class="select-kucun">库存45321件</p>
+    </div>
+    <!--<div class="product-detail-select-area">
+           <h1>配送区域</h1>
+           <div class="detail-select-area-info">
+               <p><img src="./images/cart_address.png"><span class="address"><span>广东省</span><span>深圳市</span><span>宝安区</span></span><br>
+               预售商品，付款后3天内发货</p>
+               <img src="./images/arrow_right.png" class="detail-select-arrow-right" alt="右箭头">
+           </div>
+    </div>-->
+    <div class="product-detail-select-num">
+        <p class="flo-l">购买数量</p>
+        <p class="flo-r"><img src="./images/cart_jian.png" id="jian" alt="减"><span id="num">1</span><img src="./images/cart_jia.png" alt="加" id="jia"></p>
+    </div>
+    <div class="product-detail-select-btn">
+             确定
+    </div>
+</div>
+<div class="display-cart">
+    <img src="./images/shop_cart.png" id="cart-btn">
+    <span></span>
+</div>
+<textarea id="detail-cont" style="display: none">
+                  <h1>$goodsName$</h1>
+                  <p>￥$goodsDiscountPrice$</p>
+                  <ul class="product-detail-price">
+                  <li>原价：￥$goodsPrice$</li>
+                  </ul>
+                  <ul class="product-detail-express">
+                  <li>快递:免运费</li>
+                      <li>库存$goodsCounts$件</li>
+                  <!--<li>月销2000笔</li>
+                  <li>广东深圳</li>-->
+                  </ul>
+</textarea>
+</body>
+<script type="text/javascript" src="./common/js/swiper.min.js"></script>
+<script src="./common/js/layer/layer.js"></script>
+<script src="./common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/zy-ajax.js"></script>
+<script src="./js/productDetails.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>培训工作室</title>
+    <link rel="stylesheet" type="text/css" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/lnn-style.css">
+
+</head>
+<body>
+    <div id="wrap-video-list">
+        <div class="top-nav">
+            <span class="goBack icon-arrow-left" onclick="window.history.go(-1);"></span>
+            <span class="shop-cart-title">培训工作室</span>
+        </div>
+        <div class="wrap-video ">
+            <ul class="list-unstyled">
+            </ul>
+        </div>
+    </div>
+
+<textarea style="display: none">
+     <li>
+         <div class="video-info">
+             <div class="video-title">$tTitle$</div>
+             <div class="video-num">播放$tVideoClick$次</div>
+         </div>
+         <video src="#MinImgUrl#$tVideoUrl$" controls="controls" class="video" onplay="handleAddVideoReadNum($tId$)"> 
+
+         </video>
+
+     </li>
+     <div class="space-line"></div>
+</textarea>
+</body>
+<script src="./common/js/jquery-3.2.1.min.js"></script>
+<script src="./common/js/bootstrap.min.js"></script>
+<script src="./common/js/layer/layer.js"></script>
+<script src="./common/js/cache.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/zy-ajax.js"></script>
+<script src="./js/videoDisplay.js"></script>
+</html>

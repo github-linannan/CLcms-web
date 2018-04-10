@@ -1,0 +1,1043 @@
+@charset "UTF-8";
+/*px转换成vw*/
+@function px2vw($px) {
+  @return $px / 750 * 100vw;
+}
+
+.top-nav{
+  height: px2vw(100);
+  line-height: px2vw(100);
+  background-color: #00d4b0;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: px2vw(38);
+  text-align: center;
+/*  padding-top: px2vw(60);*/
+  .icon-arrow-left{
+    width: px2vw(22);
+    height: px2vw(40);
+    background: url("../images/arrow_left.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: px2vw(25);
+    top: px2vw(20);
+  }
+
+}
+/*我的订单页面公共按钮样式*/
+.border-radius-style{
+  border-top-left-radius: px2vw(40);
+  border-bottom-left-radius: px2vw(40);
+  border-top-right-radius: px2vw(40);
+  border-bottom-right-radius: px2vw(40);
+}
+
+  .btn-style{
+    padding: px2vw(10) px2vw(30);
+    border: 2px solid #999999;
+    color: #444444;
+    font-size: px2vw(26);
+  }
+  .live-border-color{
+    color: #00d4b0;
+    border: 2px solid #00d4b0;
+  }
+.btn-blue-bg{
+  color: #FFFFFF;
+  background-color: #00d4b0;
+}
+
+
+
+
+
+/*右侧个人中心*/
+
+#person-pos{
+  position: absolute;
+  right: px2vw(30);
+  top: px2vw(40);
+  line-height: normal;
+  img{
+    background-size: 100%;
+    width: px2vw(41);
+  }
+}
+#person-info-down{
+  z-index: 5;
+  width: px2vw(520);
+  background: #fff;
+  position: fixed;
+  right: px2vw(-400);
+  top: 0px;
+  height: 100%;
+  .user-info{
+    width: 100%;
+    height: px2vw(350);
+    padding-top: px2vw(138);
+  }
+
+  .nav-take-icon,.take-cls-icon {
+    position: absolute;
+    width: px2vw(32);
+    height: px2vw(36);
+    margin: px2vw(52) 0 0 px2vw(25);
+    background: url("../images/take_icon.png") no-repeat left top;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+  }
+  .nav-top-login{
+    display: none;
+    margin: 0 0  px2vw(10);
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: #00d4b0;
+    p{
+      color: #FFFFFF;
+      font-size: px2vw(28);
+      padding-top: px2vw(17);
+    }
+    .nav-head-pic { width: px2vw(100); display: block;    margin: 0 auto; }
+    .nav-name-text {  max-width: px2vw(300); text-align: center;  margin: 0 auto; }
+  }
+  .nav-top-login.show{display: block;}
+
+
+  .person-info-link {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: px2vw(32);
+    height: px2vw(90);
+    line-height: px2vw(90);
+    color: #535353;
+    border-bottom: 1px solid #e6e6e6;
+    .person-info-icon{
+      display: inline-block;
+      vertical-align: middle;
+      margin:0 px2vw(60) 0 px2vw(70);
+    }
+    .icon-orders{
+      background: url("../images/icon_my_orders.png") no-repeat;
+      width: px2vw(33);
+      height: px2vw(39);
+      background-size: 100%;
+    }
+    .icon-report{
+      background: url("../images/icon_report.png") no-repeat;
+      width: px2vw(33);
+      height: px2vw(40);
+      background-size: 100%;
+    }
+    .icon-inspector{
+      background: url("../images/icon_my_referee.png") no-repeat;
+      width: px2vw(33);
+      height: px2vw(28);
+      background-size: 100%;
+    }
+    .icon-address{
+      background: url("../images/icon_address.png") no-repeat;
+      width: px2vw(33);
+      height: px2vw(33);
+      background-size: 100%;
+    }
+    .icon-collection{
+      background: url("../images/icon_collection.png") no-repeat;
+      width: px2vw(33);
+      height: px2vw(32);
+      background-size: 100%;
+    }
+
+    &:hover {  background: #f2f2f2;  }
+  }
+  .person-info-set{
+    font-size: px2vw(32);
+    color: #535353;
+    padding:0 px2vw(50);
+    height: px2vw(160);
+    line-height: px2vw(160);
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-top: px2vw(300);
+    .nav-set{float: left;}
+    .nav-aboutus{float: right;}
+  }
+}
+#pg-index {background-color: #FFFFFF;overflow: hidden;
+  /*首页头标题公共*/
+  .page-header{margin: 0;padding:0;height: px2vw(89);line-height: px2vw(89);
+    .icon{ display: inline-block;vertical-align: middle;margin-right: px2vw(10);}
+    .icon-package{
+      background: url("../images/icon_package.png") no-repeat;
+      width: px2vw(35);
+      height: px2vw(40);
+      background-size: 100%;
+    }
+    .icon-shop{
+      background: url("../images/icon_shop.png") no-repeat;
+      width: px2vw(41);
+      height: px2vw(35);
+      background-size: 100%;
+    }
+    .icon-info{
+      background: url("../images/icon_info.png") no-repeat;
+      width: px2vw(34);
+      height: px2vw(34);
+      background-size: 100%;
+    }
+    h1{
+      margin: 0 auto;
+      display: inline-block;
+      padding-right:px2vw(460);
+      font-size: px2vw(32);
+      vertical-align: middle;
+    }
+    .icon-next{
+      background-size: 100%;
+      width: px2vw(12);
+      height: px2vw(22);
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  /*end 首页头标题公共*/
+  .container-fluid{padding: 0; }
+  .container {
+    font-size: px2vw(28);
+    color: #000000;
+  }
+
+}
+.dis-inb {  display: inline-block;  }
+.dis-none {  display: none;  }
+/*遮盖*/
+.shadow-bg {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #000;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  height:100%;
+  display:none;
+  width: 100%;
+}
+/*end 遮盖*/
+
+/*导航显示隐藏*/
+.header-nav{ width: 100%;height: px2vw(100);background-color: #00d4b0;
+  .navbar-default{background-color: transparent;border-color: transparent;}
+  .navbar{margin-bottom: 0;border:none;}
+  .navbar-toggle{
+    position: absolute;clear: both;display: inline-block;border: none;float: none;margin:0;padding: 0;
+    top: px2vw(35);left: px2vw(25);
+    .btn-menu{
+      background: url("../images/icon_btn_menu.png");
+      display: block;
+      width: px2vw(47);
+      height: px2vw(38);
+      background-size: 100%;
+    }
+    .icon-bar{width: px2vw(47);height: px2vw(7);background-color: #FFFFFF;border-radius: 5px;}
+  }
+
+
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color: transparent;}
+  .navbar-collapse.in{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    transform: translateY(0);
+    visibility: visible;
+  }
+.navbar-collapse{
+    position: absolute;  top: px2vw(128);
+    left: 0;
+    z-index: 99;
+    margin:0;
+    padding: 0;
+    background-color: #3a434a;
+    width: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform .4s,box-shadow .4s;
+    transition: transform .4s,box-shadow .4s;
+    text-align: center;
+    font-size: 18px;
+    visibility: hidden;
+}
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{border-color: transparent;}
+  .web-down-ul {
+    padding: 0px 1%;
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    margin:0 auto;
+  }
+  .web-down-li {
+    float: left;
+    margin: 3%  0;
+    padding: 0px 1%;
+    width: 25%;
+    height: px2vw(60);
+    line-height: px2vw(60);
+  }
+  .index-base-color {  background: #5B4DA9;  }
+  .web-down-li-a2 { background: #2da5da;  }
+  .web-down-li-a {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    height: px2vw(60);
+  }
+
+}
+/*end导航显示隐藏*/
+
+/*首页轮播*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+   img{
+    width: 100%;
+    display: block;
+    border: none;
+  }
+}
+/*end 首页轮播*/
+
+.index-menu-list{
+  height: px2vw(188);padding:px2vw(45) 0 px2vw(18) 0;overflow: hidden;
+  .icon-top-list{margin:0 auto;}
+  .icon-view-report{display: block;
+    img{
+      width: px2vw(65);height: px2vw(68);
+    }
+  }
+  .icon-training-studio{display: block;
+    img{
+      width: px2vw(66);height: px2vw(69);
+    }
+  }
+  .icon-gene-special{display: block;
+    img{
+      width: px2vw(43);height: px2vw(69);
+    }
+  }
+  .icon-cooperative-hospital{display: block;
+    img{
+    width: px2vw(68);height: px2vw(68);
+  }
+  }
+  p{font-size: px2vw(26);margin: px2vw(16) 0;color: #595959;}
+}
+
+/*分割线*/
+.space-line{width: 100%;height: px2vw(17);border: 1px solid #e6e6e6;background-color: #f2f2f2;border-style: none;}
+/*end 分割线*/
+.index-health-package{
+  .list-unstyled{    padding: 0;  margin: 0;
+    li{margin: 23px 0 17px 0;}
+    img{   width: 100%;}
+  }
+}
+/*健康商城*/
+.index-health-shop{
+  .row{margin:0;
+    .col-xs-4{padding: px2vw(20) 0 0;
+      img{width: px2vw(220);height: auto;border:1px solid #ECECEC;}
+      .disc{text-align: left;padding-left: px2vw(25);
+        h2{font-size: px2vw(24);margin: px2vw(25) 0 px2vw(10) 0;}
+        /*.desc{font-size: px2vw(24);margin:px2vw(10) 0 0 0;}*/
+        .price{
+          strong{font-size: px2vw(24);color: #ff6b90;}
+          del {
+            color: #bfbfbf;
+            margin-left: 5px;
+          }
+        }
+      }
+
+    }
+  }
+}
+/*健康商城*/
+/*健康资讯*/
+.index-health-info{padding-bottom: px2vw(40);
+  .list-unstyled{margin-bottom: 0;}
+ ul li{height: px2vw(240);border-bottom: 1px solid #ebebeb;padding: px2vw(38) px2vw(25) 0 px2vw(25);
+   img, .news-list{display: inline-block;}
+   img{width: px2vw(233);height: px2vw(163);border: 1px solid #dfdfdf;vertical-align: middle;border-radius: px2vw(10);display: inline-block;float: left;}
+   .news-list{width: px2vw(450);text-align: left;vertical-align: top;display: inline-block;
+   .shorttitle{font-size: px2vw(28);width: px2vw(440);overflow: hidden;white-space: nowrap;
+     padding-bottom:px2vw(20);}
+     .indexnews-con{
+       font-size: px2vw(20);line-height: px2vw(22);
+       position: relative; line-height: px2vw(25); max-height: px2vw(50);overflow: hidden;  }
+     .indexnews-con::after{content: "..."; position: absolute; /*bottom: 0; right: 0; padding-left: px2vw(30);
+       background: -webkit-linear-gradient(left, transparent, #fff 55%);
+       background: -o-linear-gradient(right, transparent, #fff 55%);
+       background: -moz-linear-gradient(right, transparent, #fff 55%);
+       background: linear-gradient(to right, transparent, #fff 55%);*/
+     }
+     .account-of-read{ width: 100%;text-align: right;  position: relative;  top: px2vw(50);}
+   }
+ }
+}
+//健康资讯列表页
+#wrap-info-content{
+  background: #FFFFFF;
+  .wrap-info{
+    padding: px2vw(40) px2vw(30) px2vw(100);
+
+  }
+
+  .hl-news-pagetittle {
+    color: #666;
+    font-size: px2vw(26);
+    line-height: px2vw(48);
+    text-align: center;
+  }
+  .hl-news-pagetime {
+    text-align: center;
+    font-size: px2vw(20);
+    color: #989898;
+    line-height: px2vw(48);
+  }
+  .info-content {
+    img{
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+}
+/*end 健康资讯*/
+
+
+//培训工作室
+#wrap-video-list{
+  .wrap-video{
+    ul{
+      li {
+        width: px2vw(700);
+        margin:px2vw(30) auto;
+        text-align: center;
+
+        video{
+          width: 100%;
+          border-radius: 10px;
+        }
+        .video-title{font-size: px2vw(32);color: #666;}
+        .video-num{color: #989898;}
+      }
+    }
+  }
+}
+
+
+
+
+
+/*购物车*/
+#pg-shop-cart{
+  .space-line{border:none;}
+  input[type="checkbox"] {
+    display: none;
+    width: px2vw(30);
+    height: px2vw(30);
+    margin:0 auto;
+  }
+  input[type="radio"]{
+    width: px2vw(30);
+    height: px2vw(30);
+    margin:0 auto;
+  }
+  label {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    border: 1px solid #b8b8b8;
+    width: px2vw(30);
+    height: px2vw(30);
+    margin:0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+    &:last-child{
+      vertical-align: middle;
+      margin-right: px2vw(20);
+    }
+  }
+  label.mark {
+    background: url("../images/mark.png") no-repeat;
+    background-size: 100%;
+    border: none;
+  }
+  .top-shop-cart{
+    height: px2vw(100);line-height: px2vw(100);padding: 0 px2vw(50);
+    .text-shop-cart{float: left;color: #3e3e3e;font-size: px2vw(34);}
+
+  }
+  #delete-all{  float: right;color: #00d4b0;font-size: px2vw(34);}
+  .list-shop-cart{
+    .container-package{
+        /*display: table-cell;*/
+        padding: px2vw(25);
+        position: relative;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        .box-checkbox{
+          display: table-cell;
+          position: relative;
+          width: px2vw(60);
+          vertical-align: middle;
+          input[type="checkbox"] {
+            position: absolute;
+            z-index: 0;
+            left: -20px;
+            top: -20px;
+          }
+
+        }
+        &>a {
+          display: table-cell;
+          position: relative;
+          z-index: 3;
+          width: px2vw(180);
+          height: px2vw(175);
+          vertical-align: middle;
+          border:1px solid #f2f2f2;
+          line-height: px2vw(175);
+          img {
+            width: 80%;
+            height: auto;
+          }
+        }
+      .box-product-info {
+        display: table-cell;
+        vertical-align: top;
+        padding-left: px2vw(30);
+        position: relative;
+        width: px2vw(460);
+        text-align: left;
+        .product-top-text{
+          &>a {
+            overflow: hidden;
+            position: relative;
+            z-index: 3;
+            width: px2vw(330);
+            float: left;
+            font-size: px2vw(26);
+            color: #000000;
+            &:after{content: "..."; position: absolute; bottom: 0;/* right: 0; padding-left: px2vw(30);*/
+              background: -webkit-linear-gradient(left, transparent, #fff 55%);
+              background: -o-linear-gradient(right, transparent, #fff 55%);
+              background: -moz-linear-gradient(right, transparent, #fff 55%);
+              background: linear-gradient(to right, transparent, #fff 55%);
+            }
+          }
+
+          .btn-delete{
+            float: right;
+            width: px2vw(26);
+            height: px2vw(26);
+            background: url("../images/icon_delete.png") no-repeat;
+            background-size: 100%;
+          }
+        }
+        .order-product-attributes {
+          font-size: px2vw(24);
+          color: #afafaf;
+          margin: px2vw(15) 0 px2vw(20);
+          text-align: left;
+          width: 100%;
+          display: inline-block;
+        }
+        .btns-deal-product-amount{
+          display: table-cell;
+          vertical-align: middle;
+          position: relative;
+          height: px2vw(60);
+          width: px2vw(460);
+          text-align: left;
+          float: left;
+          .order-product-price {
+            position: relative;
+            width: px2vw(200);
+            vertical-align: middle;
+            display: inline-block;
+            em {
+              display: block;
+              color: #ff6b90;
+              font-size: px2vw(32);
+              font-weight: bold;
+              font-style: normal;
+            }
+            del {
+              display: block;
+              color: #afafaf;
+              font-size: px2vw(24);
+              font-style: normal;
+            }
+          }
+          .amount-box {
+           /* height: px2vw(50);
+            line-height: px2vw(50);*/
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid #f2f2f2;
+            font-size: px2vw(26);
+            &>a{
+              float: left;
+              text-align: center;
+              width: px2vw(50);
+              height: px2vw(50);
+              line-height: px2vw(50);
+              color: #bfbfbf;
+              background-color: #efefef;
+            }
+            .product-qty{
+              float: left;
+              text-align: center;
+              width: px2vw(120);
+              height: px2vw(50);
+              color: #333333;
+            }
+          }
+        }
+
+      }
+
+
+
+    }
+  }
+  .container-all-select{
+    position: fixed;
+    overflow: hidden;
+    background-color: #fafafa;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: px2vw(97);
+    padding-left: px2vw(35);
+    border:1px solid #e1e1e1;
+    border-top:none;
+    border-bottom:none;
+  }
+  .box-all-select{
+    float: left;
+    line-height: px2vw(97);
+    font-size: px2vw(28);
+    input[type="radio"]{
+      margin-right: px2vw(20);
+    }
+    .all-text{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left:px2vw(10);
+    }
+  }
+  .box-sum-price{
+    line-height: px2vw(97);
+    .total-num {
+      display: inline-block;
+      font-size: px2vw(24);
+      margin-right: px2vw(18);
+    }
+    .total-money{
+      display: inline-block;
+      font-size: px2vw(28);
+      margin-right: px2vw(18);
+    }
+
+      .sum-price{
+        color: #ff6b90;
+        font-size: px2vw(26);
+        font-weight: bold;
+      }
+    }
+  .settlement{
+    height: 100%;
+    background-color: #B0B0B0;
+    float: right;
+    color: #FFFFFF;
+    font-size: px2vw(32);
+    line-height: px2vw(97);
+    padding:0 px2vw(60);
+    >a{
+      color: #FFFFFF;
+
+      font-size: px2vw(32);
+      line-height: px2vw(97);
+    }
+  }
+  .settlement.btn_sty{
+    background-color: #00d4b0;
+  }
+}
+/* end 购物车*/
+
+
+#payment{visibility: hidden;}
+#payment-result{
+  background-color: #f6f6f6;
+  height: 100%;
+.pay-common{
+  .icon-show{
+ /*   height: px2vw(128);
+    overflow: hidden;*/
+    text-align: center;
+    margin: 0 auto;
+    padding: px2vw(15) 0;
+    border-bottom: 1px solid #f2f2f2;
+    p{  font-size: px2vw(32);  }
+  }
+  .icon-right{
+    .icon{
+      width: px2vw(100);
+      height: px2vw(100);
+      background: url("../images/pay_success.png") center no-repeat;
+      background-size: 50%;
+    }
+    p{  color: #88bf57;  }
+  }
+  .icon-error{
+    .icon{
+      width: px2vw(100);
+      height: px2vw(100);
+      background: url("../images/pay_failed.png") center no-repeat;
+      background-size: 50%;
+    }
+    p{color: #ec7161;}
+  }
+  .icon{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  /*  width: px2vw(256);
+    height: px2vw(256);
+    background-size: 50%;*/
+  }
+}
+
+  .pay-content{
+    margin: 0 auto;
+    ul li{
+      height: px2vw(80);
+      line-height: px2vw(80);
+      color: #7d7d7d;
+      padding: 0 px2vw(30);
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #f3f3f3;
+      font-size: px2vw(28);
+      .left-name{float: left;}
+      .right-name{float: right;}
+
+    }
+  }
+  .btn-return{
+    background-color: #00d4b0;
+    width: 80%;
+    height: px2vw(60);
+    line-height: px2vw(60);
+    text-align: center;
+    margin:px2vw(120) auto px2vw(30);
+    border-radius: 5px;
+    font-size: px2vw(28);
+    a{
+      color: #FFFFFF;
+    }
+
+  }
+/*  h1{
+    font-size: px2vw(38);color: #040000;
+    .pay-money{color: #ffd486;}
+  }
+  .dis-bl{
+    display: block;
+    font-size: px2vw(32);
+  }
+  .pay-info{
+    span{font-weight: bold;  }
+  }
+  .pay-next{
+    a{display: inline-block;color: #00d4b0;}
+  }
+  .pay-common{
+    text-align: left;
+    margin:0 px2vw(50);
+  }
+  .pay-failed{
+    .pay-info{  color: #7e7570;  }
+  }*/
+
+}
+/* 我的订单*/
+
+#pg-my-orders{
+  .top-nav{
+    .icon-arrow-left{
+      width: px2vw(22);
+      height: px2vw(40);
+      background: url("../images/arrow_left.png") no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: px2vw(25);
+    }
+  }
+  .tabs{
+    .tabs_menu{
+      text-align: center;
+      margin:0 auto;
+      height: px2vw(80);
+      line-height: px2vw(80);
+      a{
+        font-size: px2vw(26);
+        float:left;
+        width: px2vw(125);
+        margin:0 px2vw(10);
+        text-decoration: none;
+      }
+      .selected{
+        border-bottom: px2vw(4) solid #00d4b0;
+        position:relative;
+        color: #00d4b0;
+      }
+    }
+    .space-line{border: none;}
+    .tabs_content{
+     /* height: px2vw(430);*/
+      padding:0 px2vw(30);
+      .tabs-item-head{
+        height: px2vw(80);
+        line-height: px2vw(80);
+        text-align: left;
+        border-bottom: 1px solid #f2f2f2;
+        font-size: px2vw(32);
+        color: #595959;
+        span{
+          display: inline-block;
+        }
+        .fold{
+          float: right;
+          img{
+            width: px2vw(12);
+          }
+        }
+      }
+      .tabs-product-list{
+        padding: px2vw(30) 0;
+        border-bottom: 1px solid #f2f2f2;
+        .tabs-product-img{
+          width: px2vw(178);
+          height: px2vw(178);
+          line-height: px2vw(178);
+          border:1px solid #e8e8e8;
+          display: inline-block;
+          vertical-align: middle;
+          img{
+            width: 80%;
+          }
+        }
+
+
+        .tabs-product-info{
+          display: inline-block;
+          text-align: left;
+          width: px2vw(480);
+          padding:0 px2vw(30);
+          vertical-align: middle;
+           &>a, .order-info-name a{
+             display: table-cell;
+             position: relative;
+             font-size: px2vw(32);
+             color: #000000;
+            /* 后缀省略号*/
+             /* &:after{
+                content: "..."; position: absolute; bottom: 0;
+                background: -webkit-linear-gradient(left, transparent, #fff 55%);
+                background: -o-linear-gradient(right, transparent, #fff 55%);
+                background: -moz-linear-gradient(right, transparent, #fff 55%);
+                background: linear-gradient(to right, transparent, #fff 55%);
+              }*/
+            }
+
+
+
+
+
+          .order-info-desc{color: #afafaf;font-size: px2vw(26);margin:px2vw(20) 0;}
+          .tabs-product-attributes{
+            padding:px2vw(20) 0;
+            font-size: px2vw(24);
+            color: #afafaf;
+          }
+          .order-product-price{height: px2vw(40);
+            line-height: px2vw(40);
+            .box-price{
+              float: left;
+
+              em{
+                font-size: px2vw(38);
+                color: #ff6b90;
+                font-style: normal;
+                margin-right: px2vw(15);
+              }
+              del{
+                font-size: px2vw(26);
+                color: #afafaf;
+              }
+            }
+            .box-number{float: right;}
+          }
+        }
+        .tabs-product-info.report-list{
+          width: px2vw(400);
+          padding:0 0 0 px2vw(30);
+        }
+        .report-status{
+          display: inline-block;
+          vertical-align: top;
+          position: absolute;
+          right: 0;
+          color: #FFFFFF;
+          height: px2vw(45);
+          line-height: px2vw(45);
+          font-size: px2vw(18);
+          padding: 0  px2vw(10) 0 px2vw(15);
+          border-top-left-radius: px2vw(40);
+          border-bottom-left-radius: px2vw(40);
+        }
+        .dis-none.report-status{
+          display: none;
+        }
+        .report-no{
+          background-color: #ffbd59;
+        }
+        .report-yes{
+          background-color: #59d957;
+        }
+        .information-entry{margin-top: px2vw(30);}
+      }
+
+      .total-info{
+        width: 100%;
+        text-align: right;
+        font-size: px2vw(28);
+        color: #161616;
+        padding: px2vw(20) 0 px2vw(40) ;
+        .unit-num{padding-right: px2vw(35);}
+      }
+      .btn-deal{
+        text-align: right;
+        font-size: px2vw(26);
+        padding-bottom: px2vw(20);
+
+        .live-border-color{ border: 2px solid #00d4b0;}
+
+
+
+      }
+
+    }
+  }
+
+}
+
+/*微信支付的弹窗*/
+#weixin{
+  display: none;
+  text-align: center;
+  margin:0 auto;
+  background-color: #FFFFFF;
+  color: #030303;
+  font-size: px2vw(28);
+
+/*  border:1px solid #e6e6e6;*/
+  border-radius: 20px;
+  ul {
+    li{
+      padding: px2vw(10) 0;
+    }
+    li.complete{
+      a{
+        color: red;
+      }
+
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+  .pay-ensure-title{
+    padding: px2vw(20) 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+}
+
+#orderdetails{
+  .submit-order-shop{margin-bottom: 0;}
+  .submit-order-shop-express.mg-lt-0{
+    border-bottom: none;
+  }
+  .order-info{
+    margin:0 px2vw(50);
+    overflow: hidden;
+    height: px2vw(115);
+    text-align: left;
+    padding: px2vw(20) 0;
+    color: #afafaf;
+    font-size: px2vw(26);
+    p{display: inline-block;}
+  }
+  .space{
+    height: px2vw(212);
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .btn-deal{
+    float: right;
+    margin-right: px2vw(25);
+    button{
+      margin: px2vw(20) px2vw(15);
+    }
+
+  }
+}
